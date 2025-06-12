@@ -18,7 +18,7 @@ $controller = new UserController();
 
 $totalEventos = $controller->returntotalevents();
 $totalJuegos = $controller->getUserInterestedGamesCount();
-$misEventos = $controller->getPromotorEvents();
+$controller->getPromotorEvents();
 
 if(empty($misEventos)){
   $misEventos[0]['total_eventos'] = 0;
